@@ -1,0 +1,82 @@
+@import './partials/_colors';
+@import './partials/_fonts';
+@import './partials/_media';
+@import "bootstrap/dist/css/bootstrap.min.css";
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+.app{
+	width:100%;
+}
+input[type="color"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"],
+select:focus,
+textarea {
+  font-size: 16px;
+}
+html, body,.root{
+	color:$primary_theme;
+	height:100vh;
+    padding:0;
+    margin:0;
+    background-color:$background_color;
+	width:100%;
+	font-size:16px;
+	overflow-x:hidden;
+}
+
+a {
+	text-decoration: none;
+	color: $primary_theme;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+th,
+td,
+caption,
+p {
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	border: 0;
+}
+
+* {
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+.app{
+	width:100%;
+}
+//Flex
+@mixin flexDisp($flex-direction, $justify-content) {
+	display: flex;
+	flex-direction: $flex-direction;
+	justify-content: $justify-content;
+}
+
+.root{
+	width:100%;
+	@include flexDisp(column,flex-start);
+}

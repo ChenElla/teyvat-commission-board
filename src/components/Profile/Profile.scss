@@ -1,0 +1,347 @@
+@import "../../styling/global.scss";
+.long_input{
+    margin-left:4px;
+    color:$primary_theme;
+    border-radius:10px;
+    border:2px solid $secondary_theme;
+    opacity:0.8;
+    background-color: $background_color;
+    width:100%;
+    margin-left:8px;
+    text-align:center;
+    padding:5px 8px;
+    @include desktop{
+        width:80%;
+    }
+    &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: $primary_theme;
+        opacity: 1; /* Firefox */
+        }
+        
+        :-ms-input-placeholder { /* Internet Explorer 10-11 */
+            color: $primary_theme;
+        }
+        
+        ::-ms-input-placeholder { /* Microsoft Edge */
+            color: $primary_theme;
+        }
+        &::placeholder{
+            color:$secondary_theme;
+        }
+}
+option{
+    width:100%;
+    background-color: $background_color;
+    color:$primary_theme;
+    &:hover{
+        background-color:$primary_theme;
+        color:white;
+    }
+}
+.profileContainer2{
+    @include tablet{
+        width:60%;
+    }
+}
+.profile{
+    @include input;
+    min-height:70%;
+    background-color: rgba(white,0.8);
+    border-radius:20px;
+    box-sizing: border-box;
+    margin:16px;
+    padding:32px 24px;
+    align-items:center;
+    text-align: center;
+    @include flexDisp(column,space-between);
+    @include tablet{
+        width:90%;
+        padding:32px;
+    }
+    &__profileContainer{
+        min-width:80%;
+        font-size:16px;
+        @include tablet{
+            min-width:40%;
+            font-size:18px;
+        }
+        &__iconContainer{
+            @include flexDisp(column,center);
+            align-items:center;
+            @include tablet{
+                border-right:2px rgba($primary_theme,0.3) solid;
+            }
+            &__username{
+                @include sub_header;
+            }
+            &__uid{
+                margin-bottom:16px;
+                color:$sub_text_color;
+            }
+            &__icon{
+                border-radius:100%;
+                border:2px solid $secondary_theme;
+                height:100px;
+                width:100px;
+                padding:10px;
+                margin-bottom:4px;
+            }
+            &__signatureContainer{
+                width:90%;
+                border:2px solid $blue_grey;
+                color:$primary_theme;
+                border-radius: 20px;
+                padding:16px 32px;
+                margin-bottom:24px;
+                text-shadow: -1px 0 $background_color, 0 1px $background_color, 1px 0 $background_color, 0 -1px $background_color;
+                &__signature{
+                    padding:16px;
+                }
+            }
+        }
+        &__data{
+            width:90%;
+            margin:auto;
+            @include sub_header;
+            font-size:16px;
+            &__item{
+                @include flexDisp(row,flex-start);
+                @include tablet{
+                    align-items:flex-start;
+                }
+                &__value{
+                    color:$text_color;
+                    font-weight:400;
+                    font-size:16px;
+                    @include tablet{
+                        font-size:18px;
+                    }
+                }
+                &__label{
+                    font-size:16px;
+                    @include tablet{
+                        font-size:18px;
+                    }
+                }
+            }
+            
+            &__profileData{
+                @include flexDisp(column, flex-start);
+                align-items:center;
+                width:100%;
+                margin-top:24px;
+                &__item{
+                    @include flexDisp(row, space-between);
+                    align-items:center;
+                    width:100%;
+                    margin-bottom:16px;
+                    &__input{
+                        font-size:16px;
+                        @include tablet{
+                            font-size:18px;
+                        }
+                    }
+                    &__label{
+                        font-size:16px;
+                        @include tablet{
+                            font-size:18px;
+                        }
+                    }
+                    
+                }
+                &__signature{
+                    @include flexDisp(row, space-between);
+                    align-items:center;
+                    width:100%;
+                    font-size:16px;
+                    @include tablet{
+                        font-size:18px;
+                    }
+                    &__input{
+                        font-size:16px;
+                        resize:none;
+                        text-align:left;
+                        @include tablet{
+                            font-size:18px;
+                        }
+                        &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+                            color: grey;
+                            opacity: 1; /* Firefox */
+                            }
+                            
+                            :-ms-input-placeholder { /* Internet Explorer 10-11 */
+                                color: grey;
+                            }
+                            
+                            ::-ms-input-placeholder { /* Microsoft Edge */
+                                color: grey;
+                            }
+                    }
+                    margin-bottom:16px;
+                    
+                }
+            }
+            &__gamedata2{
+                @include flexDisp(row,space-between);
+                &__item{
+                    @include flexDisp(row,space-between);
+                    width:48%;
+                    align-items: center;
+                    &__label{
+                        width:30%;
+                        font-size:16px;
+                        @include tablet{
+                            font-size:18px;
+                        }
+                    }
+                    &__input{
+                        font-size:16px;
+                        color:$primary_theme;
+                        border-radius:10px;
+                        border:2px solid $secondary_theme;
+                        opacity:0.8;
+                        width:70%;
+                        background-color: $background_color;
+                        text-align:center;
+                        padding:5px 8px;
+                        font-size:16px;
+                        @include tablet{
+                            font-size:18px;
+                        }
+                        &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+                            color: grey;
+                            opacity: 1; /* Firefox */
+                            }
+                            
+                            :-ms-input-placeholder { /* Internet Explorer 10-11 */
+                                color: grey;
+                            }
+                            
+                            ::-ms-input-placeholder { /* Microsoft Edge */
+                                color: grey;
+                            }
+                    }
+                }
+            }
+            &__gamedata{
+                @include flexDisp(row,space-between);
+                @include desktop{
+                    @include flexDisp(row,flex-start);
+                }
+                &__item{
+                    @include flexDisp(row,flex-start);
+                    @include tablet{
+                        align-items:flex-start;
+                    }
+                    &__value{
+                        color:$text_color;
+                        font-weight:400;
+                        font-size:16px;
+                        @include tablet{
+                            font-size:18px;
+                        }
+                        @include desktop{
+                            padding-right:10px;
+                        }
+                    }
+                    &__label{
+                        font-size:16px;
+                        @include tablet{
+                            font-size:18px;
+                        }
+                    }
+                }
+            }
+        }
+        &__signOut{
+            margin-top:24px;
+            @include flexDisp(row,flex-start);
+            &__button{
+                text-align: right;
+                text-decoration: underline;
+                width:fit-content;
+                font-size:16px;
+                margin-left:10px;
+                @include tablet{
+                    font-size:16px;
+                }
+                &:hover{
+                    cursor: pointer;
+                    transition:0.3s;
+                    text-shadow:-2px 0px rgba($primary_theme,0.3), 0px -2px rgba($primary_theme,0.3);
+                }
+            }
+        }
+        &__buttons{
+            @include flexDisp(row,space-between);
+            margin-top:24px;
+            
+            &__cancel{
+                font-size:16px;
+                border-radius:20px;
+                color:white;
+                width:48%;
+                padding:10px 10px;
+                border:0px;
+                background:$secondary_theme;
+                text-align: center;
+                text-transform: uppercase;
+                transition: 0.5s;
+                background-size: 200% auto;
+                color: white;            
+                box-shadow: 0 0 20px #eee;
+                display: block;
+                &:hover {
+                    cursor:pointer;
+                    background: $blue_grey;
+                     /* change the direction of the change here */
+                    text-decoration: none;
+                }
+                margin-bottom:16px;
+            }
+            &__save{
+                font-size:16px;
+                border-radius:20px;
+                color:white;
+                width:48%;
+                padding:10px 10px;
+                border:0px;
+                background-image: linear-gradient(to right, #83a4d4 0%, #b6fbff  51%, #83a4d4  100%);
+                text-align: center;
+                text-transform: uppercase;
+                transition: 0.5s;
+                background-size: 200% auto;
+                color: white;            
+                box-shadow: 0 0 20px #eee;
+                display: block;
+                &:hover {
+                    background-position: right center; /* change the direction of the change here */
+                    color: #fff;
+                    text-decoration: none;
+                }
+                margin-bottom:16px;
+            }
+        }
+    }
+}
+
+
+.scrollY{
+    overflow-y:auto ;
+    @include tablet{
+        @include flexDisp(row,space-between);
+        overflow-x:hidden;
+    }
+}
+
+.profileContainer{
+    background-image: url('../../assets/background_image/background_lumine.jpeg');
+    background-position: 0;
+    background-size: cover;
+    margin:0;
+    max-height:80vh;
+    margin-top:0px;
+    @include tablet{
+        max-height:90vh;
+    }
+}

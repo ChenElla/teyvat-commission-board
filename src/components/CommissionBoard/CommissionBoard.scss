@@ -1,0 +1,352 @@
+
+@import '../../styling/global.scss';
+.display_none{
+    display:none;
+}
+.containerWA{
+    @include flexDisp(row,flex-start);
+    box-sizing: border-box;
+    width:100%;
+    @include tablet{
+        width:50%;
+    }
+}
+.filter_input{
+    font-size:16px;
+    margin-left:4px;
+    color:$primary_theme;
+    border-radius:10px;
+    border:2px solid $secondary_theme;
+    opacity:0.8;
+    background-color: white;
+    width:70%;
+    text-align:center;
+    padding:3px 8px;
+    &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: grey;
+        opacity: 1; /* Firefox */
+        }
+        
+        :-ms-input-placeholder { /* Internet Explorer 10-11 */
+            color: grey;
+        }
+        
+        ::-ms-input-placeholder { /* Microsoft Edge */
+            color: grey;
+        }
+}
+.comCon{
+    @include desktop{
+        @include flexDisp(column,center);
+        min-height:80%;
+        margin:auto;
+        max-width:80%;
+    }
+}
+.commissionBoard{
+    overflow-y:auto;
+    width:inherit;
+    min-height:70%;
+    box-sizing:border-box;
+    padding:0 16px;
+    height:inherit;
+    margin-top:18px;
+    background-image: url('../../assets/background_image/background-barbara.jpeg');
+    background-size: cover;
+    @include tablet{
+        padding:0 32px;
+    }
+    @include desktop{
+       align-items:center;
+    }
+    &__title{
+        @include flexDisp(row,flex-start);
+        align-items:center;
+        &__label{
+            background-image: linear-gradient(white, $background_color);
+            padding:10px 24px 0 24px;
+            border-left:1px solid $secondary_theme;
+            border-right:1px solid $secondary_theme;
+            border-top:1px solid $secondary_theme;
+            box-shadow:3px 0px 8px rgba($secondary_theme, 0.8), 8px 0px 8px rgba($secondary_theme, 0.4); 
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            width:fit-content;
+            @include sub_header;
+            text-shadow: -1px 0 $background_color, 0 1px $background_color, 1px 0 $background_color, 0 -1px $background_color;
+        }
+        &__filter{
+            margin-top:4px;
+            margin-bottom:0;
+            @include flexDisp(row,flex-start);
+            background-image: linear-gradient(white, $background_color);
+            padding:3px;
+            border-left:1px solid $secondary_theme;
+            border-right:1px solid $secondary_theme;
+            border-top:1px solid $secondary_theme;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            width:fit-content;
+            transition:0.3s;
+            @include sub_header;
+            &--active{
+                filter: drop-shadow(2px 2px 5px rgba($primary_theme, 0.5));
+                margin-top:4px;
+                margin-bottom:0;
+                @include flexDisp(row,flex-start);
+                background-image:linear-gradient(white,rgba($primary_theme, 0.1));
+                padding:3px;
+                border-left:1px solid $secondary_theme;
+                border-right:1px solid $secondary_theme;
+                border-top:1px solid $secondary_theme;
+                border-top-left-radius: 20px;
+                border-top-right-radius: 20px;
+                width:fit-content;
+                transition:0.3s;
+                @include sub_header;
+            }
+            &:hover{
+                cursor: pointer;
+                filter: drop-shadow(2px 2px 5px rgba($primary_theme,0.5));
+            }
+            &__text{
+                display:none;
+                @include tablet{
+                    display:block;
+                }
+            }
+            &__icon{
+                height:35px;
+            }
+            &__title{
+                padding:0 5px;
+                font-size:18px;
+                @include tablet{
+                    font-size:20px;
+                }
+            }
+        }
+    }
+    &__commissionBoardContainer{
+        background:$background_color;
+        padding:0;
+        border-bottom:2px solid $secondary_theme;
+        &__filterContainer{
+            @include input;
+            background-color:rgba($primary_theme, 0.1);
+            padding:16px;
+            @include flexDisp(row,flex-start);
+            flex-wrap:wrap;
+            
+            &__title{
+                @include sub_header;
+                margin-bottom:16px;
+                width:100%;
+            }
+            &__item{
+                @include flexDisp(row,flex-start);
+                width:fit-content;
+                align-items:center;
+                padding:2px;
+                width:100%;
+                @include tablet{
+                    width:45%;
+                }
+                &__label{
+                    font-size:16px;
+                    margin-right:4px;
+                    @include tablet{
+                        font-size:18px;
+                    }
+                }
+                &__input{
+                    width:100%;
+                }
+                margin-right:4px;
+            }
+            &__wl{
+                width:fit-content;
+                @include flexDisp(row,flex-start);
+                padding:2px 2px;
+                align-items:center;
+                &__input{
+                    width:70px;
+                    text-align:center;
+                }
+                &__label{
+                    font-size:16px;
+                    margin-right:4px;
+                    @include tablet{
+                        font-size:18px;
+                    }
+                }
+                margin-right:4px;
+            }
+            &__ar{
+                width:fit-content;
+                @include flexDisp(row,flex-start);
+                padding:2px;
+                align-items:center;
+                &__input{
+                    width:75px;
+                    text-align:center;
+                }
+                &__label{
+                    font-size:16px;
+                    margin-right:4px;
+                    @include tablet{
+                        font-size:18px;
+                    }
+                }
+                margin-right:4px;
+            }
+            &__details{
+                width:100%;
+                @include flexDisp(row,flex-start);
+                padding:2px;
+                &__input{
+                    width:100%;
+                    text-align:left;
+                    font-size:16px;
+                    min-height:120px;
+                    &::placeholder{
+                        font-size:16px;
+                    }
+                    @include tablet{
+                        font-size:18px;
+                    }
+                }
+                &__label{
+                    font-size:16px;
+                    margin-right:4px;
+                    @include tablet{
+                        font-size:18px;
+                    }
+                }
+            }
+            &__clearButton{
+                @include label_link_button;
+                margin-top:16px;
+                text-transform: uppercase;
+                color:$primary_theme;
+                padding:5px 15px;
+                width:100%;
+                background-color:rgba($secondary_theme, 0.9);
+                border-radius:10px;
+                border:1px solid rgba($primary_theme, 0.8);
+                &:hover{
+                    transition:0.4s;
+                    background-color: white;
+                    box-shadow: 5px 5px 3px rgba($primary_theme, 0.8);
+                }
+            }
+        }
+    }
+}
+@keyframes gradient-bg {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.ongoing_com, .history_com{
+    background-color:rgba($secondary_theme, 0.4);
+}
+.ongoing_req, .history_req{
+    background-color:rgba($secondary_theme, 0.8);
+}
+
+
+.sectionCom{
+    background-color:rgba($primary_theme, 0.1);
+    @include desktop{
+        @include flexDisp(row,space-between);
+    }
+    &__sectionTitle__com{
+        @include sub_header;
+        margin-bottom:4px;
+        text-decoration: underline;
+        padding:16px;
+        color:white;
+        background-color:rgba($primary_theme, 0.8);
+    }
+    &__sectionTitle__req{
+        @include sub_header;
+        text-decoration: underline;
+        padding:16px;
+        color:white;
+        background-color:rgba($primary_theme, 0.8);
+    }
+}
+.sectionHis{
+    background-color:rgba($primary_theme, 0.1);
+    @include desktop{
+        @include flexDisp(row,space-between);
+    }
+    &__sectionTitle__com{
+        @include sub_header;
+        margin-bottom:4px;
+        text-decoration: underline;
+        padding:16px;
+        color:white;
+        background-color:rgba($blue_grey, 0.8);
+    }
+    &__sectionTitle__req{
+        @include sub_header;
+        text-decoration: underline;
+        padding:16px;
+        color:white;
+        background-color:rgba($blue_grey, 0.8);
+    }
+}
+
+.buttonContainer{
+    width:100%;
+    @include flexDisp(row,space-between);
+    margin-top:32px;
+    &__submitButton{
+        width:48%;
+        @include label_link_button;
+
+        text-transform: uppercase;
+        color:white;
+        padding:5px 15px;
+        background-color:rgba($primary_theme, 0.9);
+        border-radius:10px;
+        border:1px solid rgba($primary_theme, 0.8);
+        &:hover{
+            cursor:pointer;
+            transition:0.4s;
+            background-color: rgba($primary_theme, 0.8);
+            box-shadow: 5px 5px 3px rgba($primary_theme, 0.8);
+        }
+    }
+    &__clearButton{
+        width:48%;
+        @include label_link_button;
+        text-transform: uppercase;
+        color:$primary_theme;
+        padding:5px 15px;
+        background-color:rgba($secondary_theme, 0.9);
+        border-radius:10px;
+        border:1px solid rgba($primary_theme, 0.8);
+        &:hover{
+            cursor:pointer;
+            transition:0.4s;
+            background-color: white;
+            box-shadow: 5px 5px 3px rgba($primary_theme, 0.8);
+        }
+    }
+}
+
+.formContainer{
+    background-color:white;
+    padding:24px;
+}
+

@@ -1,0 +1,160 @@
+@import '../../styling/global.scss'; 
+.sendContainer{
+    @include flexDisp(row,center);
+    border:none;
+    background-color: white;
+    border:2px solid rgba($primary_theme,0.6);
+    &:hover{
+        transition:0.3s;
+        box-shadow: 5px 5px 3px rgba($primary_theme, 0.3);
+    }
+}
+.send_icon{
+    width:35px;
+    height:35px;
+}
+.selectUsers{
+    margin-top:4px;
+    margin-bottom:0;
+    @include flexDisp(row,flex-start);
+    background-image: linear-gradient(white, $background_color);
+    padding:3px 10px;
+    border-left:1px solid $secondary_theme;
+    border-right:1px solid $secondary_theme;
+    border-top:1px solid $secondary_theme;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width:fit-content;
+    transition:0.3s;
+    @include sub_header;
+    &--display{
+        filter: drop-shadow(2px 2px 5px rgba($primary_theme, 0.5));
+        margin-top:4px;
+        margin-bottom:0;
+        @include flexDisp(row,flex-start);
+        background-image:linear-gradient(white,rgba($primary_theme, 0.1));
+        padding:3px 10px;
+        border-left:1px solid $secondary_theme;
+        border-right:1px solid $secondary_theme;
+        border-top:1px solid $secondary_theme;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        width:fit-content;
+        transition:0.3s;
+        @include sub_header;
+    }
+}
+.chatRoom{
+    height:inherit;
+    margin-top:16px;
+    overflow-y:auto;
+    background-image:url('../../assets/background_image/background_departure.jpeg');
+        background-size: cover;
+        @include tablet{
+            padding:32px;
+        }
+        @include desktop{
+            @include flexDisp(column,center);
+            padding:32px 0;
+        }
+    &__chatRoomContainer{
+        @include desktop{
+            min-width:80%;
+            min-height:100%;
+            margin:auto;
+        }
+        &__select{
+            @include flexDisp(row,flex-start);
+        }
+        &__window{
+            width:100%;
+            padding:10px;
+            background-color: rgba(white, 0.9);
+            padding-left:10px;
+        }
+        padding:16px;
+        &__messages{
+            background-color:rgba($primary_theme,0.8);
+            @include flexDisp(column,flex-start);
+            padding:16px;
+            min-height:150px;
+            @include tablet{
+                min-height:500px;
+            }
+            @include desktop{
+                min-height:340px;
+            }
+        }
+        &__input{
+            @include flexDisp(row,flex-start);
+            &--input{
+                border-radius:0;
+                text-align:left;
+                border:2px solid rgba($primary_theme,0.6);
+                background-color:white;
+                margin:0;
+                width:100%;
+            }
+        }
+        &__commission{
+            @include desktop{
+                width:30%;
+            }
+        }
+    }
+}
+
+.message--sent{
+    @include flexDisp(row,flex-end);
+    margin-bottom:16px;
+    vertical-align:flex-start;
+    &__icon{
+        width:35px;
+        height:35px;
+    }
+    &__text{
+        width:60%;
+        border-top-left-radius:10px;
+        border-top-right-radius:10px;
+        border-bottom-right-radius:10px;
+        border-bottom-left-radius:10px;
+        padding:10px 16px;
+        background-color:white;
+        margin-right:6px;
+    }
+}
+.message--received{
+    @include flexDisp(row,flex-start);
+    vertical-align:flex-start;
+    margin-bottom:16px;
+    &__icon{
+        width:35px;
+        height:35px;
+        margin-right:6px;
+    }
+    &__text{
+        width:60%;
+        border-top-left-radius:10px;
+        border-top-right-radius:10px;
+        border-bottom-right-radius:10px;
+        border-bottom-left-radius:10px;
+        padding:10px 16px;
+        background-color:white;
+    }
+}
+
+.chatRoomSubCon{
+    @include tablet{
+        @include flexDisp(row,flex-start);
+        flex-direction:row-reverse;
+    }
+    &__details{
+        @include tablet{
+            width:100%;
+        }
+        @include desktop{
+            width:80%;
+            height:100%;
+        }
+    }
+}

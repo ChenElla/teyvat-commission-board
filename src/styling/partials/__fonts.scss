@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600&display=swap');
+@import "./_media";
+
+@mixin fontDef($text-size,$line-height){
+    font-size:$text-size;
+    line-height:$line-height;
+}
+@mixin TiWeb{
+    font-family: 'Titillium Web', sans-serif;
+}
+
+//H1 - Page header
+@mixin page_header{
+    @include fontDef(28px,36px);
+    @include TiWeb;
+    font-weight:600;
+    @include tablet{
+        @include fontDef(32px,40px);
+    }
+}
+
+//H2 - Subheader
+@mixin sub_header{
+    @include fontDef(20px,28px);
+    @include TiWeb;
+    font-weight:600;
+    @include tablet{
+        @include fontDef(24px,32px);
+    }
+}
+
+//H3 - Labels, Links, Buttons
+@mixin label_link_button{
+    @include fontDef(13px,20px);
+    @include TiWeb;
+    @include tablet{
+        @include fontDef(14px,22px);
+    }
+}
+
+@mixin input{
+    @include fontDef(16px,20px);
+    @include TiWeb;
+    font-weight:400;
+    @include tablet{
+        @include fontDef(24px,22px);
+    }
+}
+
+//H4 - TABLE HEADER
+@mixin table_header{
+    @include fontDef(11px,16px);
+    @include TiWeb;
+    font-weight:600;
+    @include tablet{
+        @include fontDef(12px,18px);
+    }
+}
+
+//P1 - Body Large
+@mixin body_large{
+    @include fontDef(16px,26px);
+    @include TiWeb;
+    @include tablet{
+        @include fontDef(23px,28px);
+    }
+}
+
+//P2 - Body Medium
+@mixin body_medium{
+    @include fontDef(13px,20px);
+    @include TiWeb;
+    @include tablet{
+        @include fontDef(14px,22px);
+    }
+}
+
+//P3 - Body Small
+@mixin body_small{
+    @include fontDef(11px,16px);
+    @include TiWeb;
+    @include tablet{
+        @include fontDef(12px,18px);
+    }
+}

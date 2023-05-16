@@ -1,0 +1,168 @@
+@import "../../../styling/global.scss";
+#title_br{
+    @include tablet{
+        display:none;
+    }
+}
+.commission{
+    width:100%;
+    
+    &__commissionContent{
+        width:100%;
+        border-top:2px solid $secondary_theme;
+        border-left:2px solid $secondary_theme;
+        border-right:2px solid $secondary_theme;
+        background-color:white;
+        padding:16px 0;
+
+        &__header{
+            @include flexDisp(row,space-between);
+            background-color:rgba($secondary_theme, 0.2);
+            color:rgba($primary_theme, 0.9);
+            @include body_medium;
+            &__number,
+            &__username{
+                margin-left:10px;
+            }
+            &__date{
+                margin-right:10px;
+            }
+        }
+        &__title{
+            @include body_medium;
+            color:$text-color;
+            padding:10px 10px;
+            background-color: white;
+            &--category{
+                text-transform: uppercase;
+                font-weight:600;
+                margin-right:10px;
+            }
+        }
+        &__details{
+            background-color: rgba($secondary_theme, 0.6);
+            align-items:center;
+            padding-left:10px;
+            @include flexDisp(row,flex-start);
+            &__icon{
+                height:10px;
+                margin-right:3px;
+            }
+            &__text{
+                margin-right:16px;
+                @include body_medium;
+            }
+        }
+        &__requirement{
+            padding-left:10px;
+            background-color: rgba($secondary_theme, 0.3);
+            @include flexDisp(row,flex-start);
+            align-items:center;
+            &__icon{
+                height:10px;
+                margin-right:3px;
+            }
+            &__text{
+                margin-right:16px;
+                @include body_medium;
+            }
+        }           
+        
+        &__closed{
+            font-size:16px;
+            color:white;
+            width:50%;
+            padding:5px 10px;
+            border:0px;
+            background-color:rgba($blue_grey, 0.8);
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;            
+            box-shadow: 0 0 20px #eee;
+            display: block;
+            &:hover {
+                cursor: auto;
+            }
+        }
+        &__buttons{
+            @include flexDisp(row,flex-start);
+            @include label_link_button;
+            text-align:center;
+            &__close{
+                font-size:16px;
+                color:white;
+                width:50%;
+                padding:5px 10px;
+                border:0px;
+                background-image: linear-gradient(to right, #4c4d79 0%, #bfbdca  51%, #76489c  100%);
+                text-align: center;
+                text-transform: uppercase;
+                transition: 0.5s;
+                background-size: 200% auto;
+                color: white;            
+                box-shadow: 0 0 20px #eee;
+                display: block;
+                &:hover {
+                    background-position: right center;
+                     /* change the direction of the change here */
+                    text-decoration: none;
+                    cursor: pointer;
+                }
+            }
+            &__complete{
+                font-size:16px;
+                color:white;
+                width:50%;
+                padding:5px 10px;
+                border:0px;
+                background-image: linear-gradient(to right, #8386d4 0%, #d8d6e4  51%, #83a4d4  100%);
+                text-align: center;
+                text-transform: uppercase;
+                transition: 0.5s;
+                background-size: 200% auto;
+                color: white;            
+                box-shadow: 0 0 20px #eee;
+                display: block;
+                &:hover {
+                     /* change the direction of the change here */
+                    text-decoration: none;
+                    cursor: pointer;
+                    background-position: right center;
+                }
+            }
+            &__contact{
+                font-size:16px;
+                color:white;
+                width:50%;
+                padding:5px 10px;
+                border:0px;
+                background-image: linear-gradient(to right, #83a4d4 0%, #98decb  51%, #83a4d4  100%);
+                text-align: center;
+                text-transform: uppercase;
+                transition: 0.5s;
+                background-size: 200% auto;
+                color: white;            
+                box-shadow: 0 0 20px #eee;
+                display: block;
+                &:hover {
+                    background-position: right center; /* change the direction of the change here */
+                    cursor: pointer;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+.smaller{
+ color:rgba($primary_theme,0.5);
+}
+.closed{
+    background-image: grey;
+}
+
+.underline_black{
+    text-decoration: underline;
+    color:$text-color;
+}

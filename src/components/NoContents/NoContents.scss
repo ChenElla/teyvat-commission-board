@@ -1,0 +1,20 @@
+@import "../../styling/global.scss";
+
+.errorContainer{
+    background-color:white;
+    @include flexDisp(column,center);
+    align-items:center;
+    padding:36px;
+    padding-bottom:56px;
+    &__noContents{
+        max-width:60%;
+    }
+    &__message{
+        text-align:center;
+        @include page_header;
+    }
+    &__submessage{
+        text-align: center;
+        @include label_link_button;
+    }
+}

@@ -1,0 +1,152 @@
+@import '../../styling/global.scss';
+
+.underline{
+    text-decoration: underline;
+}
+
+.errorMessage{
+    display:none;
+    &--display{
+        display:block;
+        @include flexDisp(row,flex-start);
+        margin-left:2px;
+        &__text{
+            color:red;
+            font-size:10px;
+        }
+        &__icon{
+            height:10px;
+            margin-right:2px;
+        }
+    }
+}
+
+.input_icon{
+    position: absolute;
+    width:40px;
+    margin-top:11px;
+    z-index: 2;
+    color:$primary_theme;
+}
+
+.loginFormContainer{
+    background-image:url('../../assets/background_image/background_church.jpeg');
+    background-position: 0;
+    background-size: cover;
+}
+
+.loginContainer{
+    border-radius:20px;
+    box-sizing: border-box;
+    background-color: rgba(white,0.8);
+    margin:16px;
+    padding:32px 32px;
+    align-items:center;
+    text-align: center;
+    @include flexDisp(column,center);
+    &__title{
+        @include page_header;
+        color:$primary_theme;
+        margin-bottom:16px;
+    }
+    &__icon{
+        border-radius:100%;
+        background-color: rgba($primary_theme,0.3);
+        border:2px solid $secondary_theme;
+        height:100px;
+        padding:10px;
+    }
+    &__loginForm{
+        width:100%;
+        padding:16px;
+        &__inputContainer{
+            &__username{
+                margin-bottom:16px;
+                @include flexDisp(row,space-between);
+                &__input{
+                    font-size:16px;
+                    border-radius:20px;
+                    border:2px solid $secondary_theme;
+                    opacity:0.8;
+                    box-shadow: 1px 2px 1px 2px $secondary_theme;
+                    background-color: $background_color;
+                    width:100%;
+                    padding:8px 10px;
+                    padding-left:33px;
+                    &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+                        color: $primary_theme;
+                        opacity: 1; /* Firefox */
+                        }
+                        
+                        :-ms-input-placeholder { /* Internet Explorer 10-11 */
+                            color: $primary_theme;
+                        }
+                        
+                        ::-ms-input-placeholder { /* Microsoft Edge */
+                            color: $primary_theme;
+                        }
+                }
+            }
+            &__password{
+                @include flexDisp(row,space-between);
+                margin-bottom:16px;
+                &__input{
+                    font-size:16px;
+                    border-radius:20px;
+                    border:2px solid $secondary_theme;
+                    opacity:0.8;
+                    box-shadow: 1px 2px 1px 2px $secondary_theme;
+                    background-color: $background_color;
+                    width:100%;
+                    padding:8px 10px;
+                    padding-left:33px;
+                    &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+                        color: $primary_theme;
+                        opacity: 1; /* Firefox */
+                        }
+                        
+                        :-ms-input-placeholder { /* Internet Explorer 10-11 */
+                            color: $primary_theme;
+                        }
+                        
+                        ::-ms-input-placeholder { /* Microsoft Edge */
+                            color: $primary_theme;
+                        }
+                }
+            }
+            &__submit{
+                font-size:16px;
+                border-radius:20px;
+                color:white;
+                width:100%;
+                padding:10px 10px;
+                border:0px;
+                background-image: linear-gradient(to right, #83a4d4 0%, #b6fbff  51%, #83a4d4  100%);
+                text-align: center;
+                text-transform: uppercase;
+                transition: 0.5s;
+                background-size: 200% auto;
+                color: white;            
+                box-shadow: 0 0 20px #eee;
+                display: block;
+                &:hover {
+                    background-position: right center; /* change the direction of the change here */
+                    color: #fff;
+                    text-decoration: none;
+                }
+                margin-bottom:16px;
+            }
+            &__forget{
+                margin-bottom:36px;
+                color:$blue_grey;
+            }
+        }
+    }
+}
+.focus{
+    margin-bottom:4px;
+}
+.not_focused{
+    margin-bottom:16px;
+    margin-top:0;
+}

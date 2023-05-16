@@ -1,0 +1,117 @@
+@import "../../styling/global.scss";
+.section-padding{
+    padding:100px 0;
+}
+
+.carousel-caption{
+    height:30vh;
+    min-height:300px;
+}
+
+.carousel-caption{
+    bottom:220px;
+    z-index:2;
+}
+.carousel-control-prev, .carousel-control-next{
+    height:100vh;
+}
+
+.carousel-caption h5{
+    font-size:45px;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    margin-top:25px;
+}
+
+.carousel-caption p {
+    width:60%;
+    margin:auto;
+    font-size:18px;
+    line-height:1.9;
+}
+
+.carousel-inner::before{
+    content:'';
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    background:rgba(0,0,0,0.3);
+    z-index:1;
+}
+
+
+.service .card-body i{
+    font-size:50px;
+}
+
+@media only screen and (min-width:768px) and (max-width:991px){
+    .carousel-caption{
+        bottom:370px;
+    }
+    .carousel-caption p{
+        width:100%;
+    }
+    .card{
+        margin-bottom:30px;
+    }
+    .img-area img{
+        width:100%;
+    }
+}
+@media only screen and (max-width: 767px){
+    .navbar-nav{
+        text-align:center;
+    }
+    .carousel-caption{
+        bottom:125px;
+    }
+    .carousel-caption h5{
+        padding:10px 15px;
+        font-size:17px;
+    }
+    .carousel-caption a{
+        padding:10px 15px;
+    }
+    .carousel-caption p {
+        width:100%;
+        line-height:1.6;
+        font-size:12px;
+    }
+    .section-padding{
+        padding:50px 0;
+    }
+    .about-img{
+        margin-bottom:50px;
+    }
+    .about-text{
+        padding:0 16px;
+    }
+    .card{
+        margin-bottom:10px;
+    }
+}
+
+.lead{
+    text-align: left;
+}
+
+
+
+.targetIcon{
+    height:50px;
+    filter:invert(1);
+}
+
+.primary{
+    background-color: $primary_theme;
+}
+
+.secondary{
+    background-color: rgba($secondary_theme,0.3);
+}
+
+.container{
+    @include flexDisp(row,center);
+}
