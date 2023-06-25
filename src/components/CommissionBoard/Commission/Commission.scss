@@ -6,15 +6,11 @@
 }
 .commission{
     width:100%;
-    
     &__commissionContent{
         width:100%;
         border-top:2px solid $secondary_theme;
-        border-left:2px solid $secondary_theme;
-        border-right:2px solid $secondary_theme;
         background-color:white;
-        padding:16px 0;
-
+        padding:0;
         &__header{
             @include flexDisp(row,space-between);
             background-color:rgba($secondary_theme, 0.2);
@@ -31,7 +27,7 @@
         &__title{
             @include body_medium;
             color:$text-color;
-            padding:10px 10px;
+            padding:10px 14px;
             background-color: white;
             &--category{
                 text-transform: uppercase;
@@ -40,7 +36,7 @@
             }
         }
         &__details{
-            background-color: rgba($secondary_theme, 0.6);
+            background-color: white;
             align-items:center;
             padding-left:10px;
             @include flexDisp(row,flex-start);
@@ -69,10 +65,11 @@
         }           
         
         &__closed{
-            font-size:16px;
+            font-size:13px;
             color:white;
             width:50%;
             padding:5px 10px;
+            border-radius:20px;
             border:0px;
             background-color:rgba($blue_grey, 0.8);
             text-align: center;
@@ -87,15 +84,18 @@
             }
         }
         &__buttons{
-            @include flexDisp(row,flex-start);
-            @include label_link_button;
+            @include flexDisp(row,space-between);
+            padding:8px;
+            background-color: white;
             text-align:center;
             &__close{
-                font-size:16px;
+                margin-right:5px;
+                font-size:13px;
+                width:45%;
                 color:white;
-                width:50%;
                 padding:5px 10px;
                 border:0px;
+                border-radius:20px;
                 background-image: linear-gradient(to right, #4c4d79 0%, #bfbdca  51%, #76489c  100%);
                 text-align: center;
                 text-transform: uppercase;
@@ -112,12 +112,14 @@
                 }
             }
             &__complete{
-                font-size:16px;
+                width:45%;
+                font-size:13px;
                 color:white;
-                width:50%;
                 padding:5px 10px;
+                margin-right:5px;
                 border:0px;
-                background-image: linear-gradient(to right, #8386d4 0%, #d8d6e4  51%, #83a4d4  100%);
+                border-radius:20px;
+                background-color:rgba($primary_theme,0.8);
                 text-align: center;
                 text-transform: uppercase;
                 transition: 0.5s;
@@ -133,12 +135,14 @@
                 }
             }
             &__contact{
-                font-size:16px;
+                font-size:13px;
                 color:white;
-                width:50%;
                 padding:5px 10px;
                 border:0px;
-                background-image: linear-gradient(to right, #83a4d4 0%, #98decb  51%, #83a4d4  100%);
+                width:45%;
+                border-radius:20px;
+                background-color:rgba($primary_theme,0.5);
+                // background-image: linear-gradient(to right, #83a4d4 0%, #98decb  51%, #83a4d4  100%);
                 text-align: center;
                 text-transform: uppercase;
                 transition: 0.5s;

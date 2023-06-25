@@ -51,6 +51,7 @@
     padding:0 16px;
     height:inherit;
     margin-top:18px;
+    padding-bottom:16px;
     background-image: url('../../assets/background_image/background-barbara.jpeg');
     background-size: cover;
     @include tablet{
@@ -65,15 +66,15 @@
         &__label{
             background-image: linear-gradient(white, $background_color);
             padding:10px 24px 0 24px;
-            border-left:1px solid $secondary_theme;
-            border-right:1px solid $secondary_theme;
-            border-top:1px solid $secondary_theme;
-            box-shadow:3px 0px 8px rgba($secondary_theme, 0.8), 8px 0px 8px rgba($secondary_theme, 0.4); 
+            margin-top:4px;
+            margin-bottom:0;
+            // border-top:1px solid $secondary_theme;
+            // box-shadow:3px 0px 8px rgba($secondary_theme, 0.8), 8px 0px 8px rgba($secondary_theme, 0.4); 
             border-top-left-radius: 20px;
             border-top-right-radius: 20px;
             width:fit-content;
             @include sub_header;
-            text-shadow: -1px 0 $background_color, 0 1px $background_color, 1px 0 $background_color, 0 -1px $background_color;
+            // text-shadow: -1px 0 $background_color, 0 1px $background_color, 1px 0 $background_color, 0 -1px $background_color;
         }
         &__filter{
             margin-top:4px;
