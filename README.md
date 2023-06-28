@@ -10,12 +10,12 @@ With **TeCoBo**, you can:
 
 **Discover Custom Content**: Explore a wide range of custom multiplayer content developed by players, offering unique and tailored experiences.
 
-Our platform aims to foster a supportive and collaborative gaming community within Teyvat, where players can come together, assist one another, and create memorable gaming moments. Join TeCoBo today and unlock new possibilities in your multiplayer adventures.
+Our platform aims to foster a supportive and collaborative gaming community within Genshin Impact, where players can come together, assist one another, and create memorable gaming moments. Join TeCoBo today and unlock new possibilities in your multiplayer adventures.
 
 Note: **TeCoBo** is an unofficial platform and is not affiliated with or endorsed by the official developers of Genshin Impact.
 
 ## Demo
-![Thumbnail of Slides](https://github.com/ChenElla/teyvat-commission-board/assets/69126129/82769dd9-4d7d-4a1a-849e-9dd9e712d961)
+[![Thumbnail of Slides](https://github.com/ChenElla/teyvat-commission-board/blob/main/src/assets/demo/WX20230628-094557.png)](https://www.loom.com/share/fcfdf8ef9d1c4b32b0e9564edc1481cd?sid=cb0c4546-591c-4ec7-a6c1-a9f8966120eb)
 
 [Link to Demo Video](https://www.loom.com/share/fcfdf8ef9d1c4b32b0e9564edc1481cd?sid=cb0c4546-591c-4ec7-a6c1-a9f8966120eb)
 
@@ -35,7 +35,7 @@ Users can submit their commission requests to the board, seeking assistance from
 ### Message
 The Message feature facilitates private communication between users, enabling them to offer help as a helper or seek advice as a client for commissions.
 
-### Getting Started
+## Getting Started
 To start using TeCoBo, please follow these simple steps:
 
 1. Clone the TeCoBo repository to your local machine.
@@ -46,19 +46,20 @@ To start using TeCoBo, please follow these simple steps:
 6. In a separate window, run the same command ``npm run dev`` to activate the API port.
 7. Access the TeCoBo site using the link provided in the terminal.
 8. For testing purposes, you can use the following user accounts:
-
 `Username: xiaosimp, Password: teyvat`
+
 `Username: almightyshogun, Password: teyvat`
 
 Please note that our team is actively working on implementing user authentication. In the future, the login method will be based on email and password.
 
 **Important Note: Current Website Limitations** 
-
 We want to bring your attention to some important information regarding the current state of our website:
 
-**Screen Size Limitation**: Currently, our website fully supports screen sizes up to 768px. However, for larger screens, the layout of certain sections may appear suboptimal. We apologize for any inconvenience caused to users with larger screens and assure you that we are actively addressing this issue.
+**Screen Size Limitation** 
+Currently, our website fully supports screen sizes up to 768px. However, for larger screens, the layout of certain sections may appear suboptimal. We apologize for any inconvenience caused to users with larger screens and assure you that we are actively addressing this issue.
 
-**Partially Implemented Functions**: Please be aware that some functions, such as signup, message notification, and private chat messaging, are not fully implemented at this stage. Our website primarily serves as a demonstration of our project's concept.
+**Partially Implemented Functions** 
+Please be aware that some functions, such as signup, message notification, and private chat messaging, are not fully implemented at this stage. Our website primarily serves as a demonstration of our project's concept.
 
 We appreciate your understanding and patience as we continue to develop and enhance these features to provide a comprehensive user experience. If you have any questions or concerns, please don't hesitate to contact our support team.
 
