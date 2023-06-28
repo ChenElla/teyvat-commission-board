@@ -15,7 +15,7 @@ Our platform aims to foster a supportive and collaborative gaming community with
 Note: **TeCoBo** is an unofficial platform and is not affiliated with or endorsed by the official developers of Genshin Impact.
 
 ## Demo
-[![Thumbnail of Slides](https://github.com/ChenElla/teyvat-commission-board/assets/69126129/82769dd9-4d7d-4a1a-849e-9dd9e712d961)]
+![Thumbnail of Slides](https://github.com/ChenElla/teyvat-commission-board/assets/69126129/82769dd9-4d7d-4a1a-849e-9dd9e712d961)
 
 [Link to Demo Video](https://www.loom.com/share/fcfdf8ef9d1c4b32b0e9564edc1481cd?sid=cb0c4546-591c-4ec7-a6c1-a9f8966120eb)
 [Link to Slides](https://www.canva.com/design/DAFm1SfV0vY/9-1RbS_2CyS-Nliz20R0ag/view?utm_content=DAFm1SfV0vY&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)
