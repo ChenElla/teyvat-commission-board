@@ -175,7 +175,7 @@ export default function CommissionBoard({userProfile}) {
                 <option value="All">All</option>
               </select>
             </div>
-            <div className = "container">
+            <div className = "commissionBoard__commissionBoardContainer__wlArContainer">
               <div className="commissionBoard__commissionBoardContainer__filterContainer__wl">
                 <div className="commissionBoard__commissionBoardContainer__filterContainer__wl__label">
                   WL{">="}
