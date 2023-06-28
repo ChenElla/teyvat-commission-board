@@ -4,23 +4,23 @@
 
 With **TeCoBo**, you can:
 
-**Find Assistance**: Connect with experienced veterans who can help you overcome challenging aspects of Teyvat's multiplayer content.\
+**Find Assistance**: Connect with experienced veterans who can help you overcome challenging aspects of Teyvat's multiplayer content.
 
-**Request Commissions**: Easily post-commission requests, specify your requirements, and receive assistance from willing helpers.\
+**Request Commissions**: Easily post-commission requests, specify your requirements, and receive assistance from willing helpers.
 
-**Discover Custom Content**: Explore a wide range of custom multiplayer content developed by players, offering unique and tailored experiences.\
+**Discover Custom Content**: Explore a wide range of custom multiplayer content developed by players, offering unique and tailored experiences.
 
 Our platform aims to foster a supportive and collaborative gaming community within Teyvat, where players can come together, assist one another, and create memorable gaming moments. Join TeCoBo today and unlock new possibilities in your multiplayer adventures.
 
 Note: **TeCoBo** is an unofficial platform and is not affiliated with or endorsed by the official developers of Genshin Impact.
 
 ## Demo
-[![WX20230628-094557](https://github.com/ChenElla/teyvat-commission-board/assets/69126129/82769dd9-4d7d-4a1a-849e-9dd9e712d961)](https://www.loom.com/share/fcfdf8ef9d1c4b32b0e9564edc1481cd?sid=cb0c4546-591c-4ec7-a6c1-a9f8966120eb)\
+[[Demo Video](https://github.com/ChenElla/teyvat-commission-board/assets/69126129/82769dd9-4d7d-4a1a-849e-9dd9e712d961)](https://www.loom.com/share/fcfdf8ef9d1c4b32b0e9564edc1481cd?sid=cb0c4546-591c-4ec7-a6c1-a9f8966120eb)
 
 [Link to Slides](https://www.canva.com/design/DAFm1SfV0vY/9-1RbS_2CyS-Nliz20R0ag/view?utm_content=DAFm1SfV0vY&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)
 
 ## Notes and Updates
-Please ignore the ``functions`` folder (it is supposed to be a serverless API in the future but right now it does not have any functions yet).\
+Please ignore the ``functions`` folder (it is supposed to be a serverless API in the future but right now it does not have any functions yet).
 V2 on progress......
 
 ## Key Functions
