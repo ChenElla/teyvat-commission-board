@@ -45,8 +45,8 @@ To start using TeCoBo, please follow these simple steps:
 6. In a separate window, run the same command ``npm run dev`` to activate the API port.
 7. Access the TeCoBo site using the link provided in the terminal.
 8. For testing purposes, you can use the following user accounts:
+   
 `Username: xiaosimp, Password: teyvat`
-
 `Username: almightyshogun, Password: teyvat`
 
 Please note that our team is actively working on implementing user authentication. In the future, the login method will be based on email and password.
