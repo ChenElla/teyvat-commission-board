@@ -40,7 +40,7 @@ To start using TeCoBo, please follow these simple steps:
 1. Clone the TeCoBo repository to your local machine.
 2. Open the repository using any code editor or terminal.
 3. Run ``npm i`` to install all the required packages.
-4. Navigate to the corresponding repository for [tevat-commission-board-api]() and follow the same steps from 1-3 above.
+4. Navigate to the corresponding repository for [tevat-commission-board-api](https://github.com/ChenElla/teyvat-commission-board-api) and follow the same steps from 1-3 above.
 5. Run ``npm run dev`` to launch the application on your local host.
 6. In a separate window, run the same command ``npm run dev`` to activate the API port.
 7. Access the TeCoBo site using the link provided in the terminal.
