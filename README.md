@@ -18,7 +18,7 @@ Note: **TeCoBo** is an unofficial platform and is not affiliated with or endorse
 [![Thumbnail of the Demo Video](https://github.com/ChenElla/teyvat-commission-board/blob/main/src/assets/demo/Thumbnail.png)](https://www.loom.com/share/fcfdf8ef9d1c4b32b0e9564edc1481cd?sid=cb0c4546-591c-4ec7-a6c1-a9f8966120eb)
 
 ### Click Below for the Slides
-[![Thumbnail of the Slides](https://github.com/ChenElla/teyvat-commission-board/blob/main/src/assets/demo/WX20230628-094557.png)](https://www.canva.com/design/DAFm1SfV0vY/9-1RbS_2CyS-Nliz20R0ag/view?utm_content=DAFm1SfV0vY&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)
+[![Thumbnail of the Slides](https://github.com/ChenElla/teyvat-commission-board/blob/main/src/assets/demo/Thumbnail-slides.png)](https://www.canva.com/design/DAFm1SfV0vY/9-1RbS_2CyS-Nliz20R0ag/view?utm_content=DAFm1SfV0vY&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)
 
 ## Notes and Updates
 Please ignore the ``functions`` folder (it is supposed to be a serverless API in the future but right now it does not have any functions yet).
