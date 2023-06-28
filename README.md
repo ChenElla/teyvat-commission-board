@@ -22,7 +22,7 @@ Note: **TeCoBo** is an unofficial platform and is not affiliated with or endorse
 
 ## Notes and Updates
 Please ignore the ``functions`` folder (it is supposed to be a serverless API in the future but right now it does not have any functions yet).
-V2 on progress......
+Version 2 is in progress. Main goal is to update the layouts accommodating larger screen sizes so it can provide a much more user-friendly interface. Boorstrap will be used for future ui frameworks.
 
 ## Key Functions
 ### Commission Board
