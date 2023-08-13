@@ -14,6 +14,47 @@ Our platform aims to foster a supportive and collaborative gaming community with
 
 Note: **TeCoBo** is an unofficial platform and is not affiliated with or endorsed by the official developers of Genshin Impact.
 
+## Project Overview and Key Takeaways (- 1~2 months)
+This project stands as the culmination of a year-long journey through the BrainStation Bootcamp, showcasing the comprehensive skills and knowledge acquired during the web development program. The focus of this capstone project was on demonstrating proficiency in various aspects of web development.
+
+The development process primarily centered around mastering the intricacies of Firestore database operations, which demanded substantial time and attention. Consequently, the allocation of resources between backend database functionalities and frontend development became a significant challenge. As a result, the frontend design suffered due to time constraints.
+
+### Key Takeaways
+
+#### Prioritize UI Design 
+Reflecting on the project, a notable learning is the importance of initiating projects with a solid UI design foundation using tools like Figma. The simultaneous coding of frontend elements while designing had an adverse impact on consistency and cohesiveness. In the future, starting with a well-thought-out design would lead to a more visually appealing and user-friendly interface.
+
+#### Utilize Frameworks Early 
+The late-stage adoption of Bootstrap for enhancing the user interface highlights the significance of choosing and integrating frameworks at an earlier stage. Although it enhanced the UI experience, time limitations prevented its full implementation across all project sections.
+
+#### Serverless API Development
+Given more time, the implementation of a serverless API using Firebase's functions would have been a valuable addition. This step could streamline backend processes and enhance the overall project functionality.
+
+#### Time Management
+The project underscores the necessity for effective time management. A more balanced allocation of time between research, development, and design could lead to a more polished final product.
+
+#### Database Expertise
+Improving proficiency in accessing and fetching data from Firestore databases, along with a deeper understanding of user authentication mechanisms, would greatly enhance the project's backend functionality.
+
+In retrospect, this project serves as a platform for growth and learning, offering insights into areas of improvement for future endeavors. The experience gained from navigating these challenges will undoubtedly contribute to creating more sophisticated and successful projects moving forward.
+
+
+## Technology Stack
+The project utilizes the following technology stack:
+
+* Vite
+* React
+* JavaScript
+* HTML5
+* Bootstrap CSS
+* Sass
+* npm
+* Git/GitHub
+* NoSQL
+* Firestore Database
+
+These technologies have been employed collaboratively to create a robust and efficient foundation for the project's development and deployment.
+
 ## Demo Video and Slides
 [![Thumbnail of the Demo Video](https://github.com/ChenElla/teyvat-commission-board/blob/main/src/assets/demo/Thumbnail.png)](https://www.loom.com/share/fcfdf8ef9d1c4b32b0e9564edc1481cd?sid=cb0c4546-591c-4ec7-a6c1-a9f8966120eb)
 
